@@ -1,0 +1,16 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The tool was downloaded from the release page 
+<https://github.com/Marcus-L/chrome-cookie-backup/releases>. 
+To verify the exe:
+
+1. Download <https://github.com/Marcus-L/chrome-cookie-backup/releases/download/v1.0.0/ChromeCookieBackup-1.0.0.zip>
+   to download the released binary archive which includes "ChromeCookieBackup.exe"
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum: 7ED9F271AB701B94E853A663369FED593E5A40AF04854A4D122EE239ACD474B1

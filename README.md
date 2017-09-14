@@ -9,7 +9,10 @@ This tool creates a decrypted SQLite backup file of the `Cookies` file in the Ch
 
 ## Usage
 
-1. Build the tool [download the latest release](https://github.com/Marcus-L/chrome-cookie-backup/releases).
+1. Install from chocolatey:
+   ```powershell
+   choco install ChromeCookieBackup
+   ```
 2. Run the tool using the Windows user account of the source user/computer and save a backup file
 3. Move the `User Data` folder in its entirety to a different user account or Windows installation, or simply create a new profile on the target computer.
 4. Run the tool on the target computer using the target user account, and restore the backup to the desired Chrome profile(s). You may map Chrome profiles from the backup file to profiles on the target computer.

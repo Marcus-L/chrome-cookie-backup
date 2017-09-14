@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>chromecookiebackup</id>
+    <version>1.0.0</version>
+    <title>ChromeCookieBackup</title>
+    <authors>Marcus Lum</authors>
+    <copyright>Copyright (C) 2017 Marcus Lum</copyright>
+    <projectUrl>https://github.com/Marcus-L/chrome-cookie-backup</projectUrl>
+    <projectSourceUrl>https://github.com/Marcus-L/chrome-cookie-backup</projectSourceUrl>
+    <licenseUrl>https://github.com/Marcus-L/chrome-cookie-backup/blob/master/LICENSE</licenseUrl>
+    <tags>chrome cookie backup</tags>
+    <summary>A Windows Tool for backing up and restoring Chrome's encrypted cookies</summary>
+    <description># Usage
+
+1. Run `ChromeCookieBackup.exe` using the Windows user account of the source user/computer and save a backup file
+2. Move the `User Data` folder in its entirety to a different user account or Windows installation, or simply create a new profile on the target computer.
+3. Run the tool on the target computer using the target user account, and restore the backup to the desired Chrome profile(s). You may map Chrome profiles from the backup file to profiles on the target computer.
+
+![Screenshot](https://github.com/Marcus-L/chrome-cookie-backup/raw/master/ChromeCookieBackup/screenshot.png)
+
+## Notes:
+* Chromium implementation of Encrypted Cookies: https://codereview.chromium.org/24734007
+* DPAPI .NET Wrapper System.Security.Cryptography.ProtectedData docs: https://msdn.microsoft.com/en-us/library/system.security.cryptography.protecteddata(v=vs.110).aspx
+    </description>
+    <dependencies>
+      <dependency id="dotnet4.5.2" version="4.5.2.20140902" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
