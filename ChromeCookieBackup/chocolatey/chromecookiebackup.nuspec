@@ -5,13 +5,19 @@
     <version>1.0.0</version>
     <title>ChromeCookieBackup</title>
     <authors>Marcus Lum</authors>
+    <owners>Marcus Lum</owners>
     <copyright>Copyright (C) 2017 Marcus Lum</copyright>
     <projectUrl>https://github.com/Marcus-L/chrome-cookie-backup</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Marcus-L/chrome-cookie-backup/master/ChromeCookieBackup/cookie.png</iconUrl>
     <projectSourceUrl>https://github.com/Marcus-L/chrome-cookie-backup</projectSourceUrl>
+    <packageSourceUrl>https://github.com/Marcus-L/chrome-cookie-backup/tree/master/ChromeCookieBackup/chocolatey</packageSourceUrl>
     <licenseUrl>https://github.com/Marcus-L/chrome-cookie-backup/blob/master/LICENSE</licenseUrl>
     <tags>chrome cookie backup</tags>
     <summary>A Windows Tool for backing up and restoring Chrome's encrypted cookies</summary>
-    <description># Usage
+    <description># Summary
+This tool creates a decrypted SQLite backup file of the `Cookies` file in the Chrome [User Data](https://www.chromium.org/user-experience/user-data-directory) Profile folder, using the credentials of the logged on user's profile. The tool can restore from this backup file back into a Chrome User Profile `Cookies` using a different user account or domain or Windows installation, by re-encrypting the data using the other user's credentials.
+
+# Usage
 
 1. Run `ChromeCookieBackup.exe` using the Windows user account of the source user/computer and save a backup file
 2. Move the `User Data` folder in its entirety to a different user account or Windows installation, or simply create a new profile on the target computer.
@@ -26,6 +32,7 @@
     <dependencies>
       <dependency id="dotnet4.5.2" version="4.5.2.20140902" />
     </dependencies>
+    <releaseNotes>Release notes are available on GitHub: https://github.com/Marcus-L/chrome-cookie-backup/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
