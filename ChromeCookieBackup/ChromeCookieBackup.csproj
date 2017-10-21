@@ -103,6 +103,9 @@
     <EmbeddedResource Include="RestoreForm.resx">
       <DependentUpon>RestoreForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="chocolatey\chromecookiebackup.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,6 +121,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chocolatey\tools\LICENSE.txt" />
+    <Content Include="chocolatey\tools\VERIFICATION.txt" />
     <Content Include="cookie.ico" />
     <Content Include="screenshot.png" />
   </ItemGroup>
